@@ -56,9 +56,9 @@ export const Tracker = () => {
             <Alert>
                 <Calendar className="h-4 w-4" />
                 <AlertTitle>
-                    Сегодня {dayjs(new Date()).format('DD.MM.YYYY')} (
-                    {((dayjs(new Date()).diff('01-01-2025', 'days') / 365) * 100).toFixed(2)}% от года или{' '}
-                    {dayjs(new Date()).diff('01-01-2025', 'days')} дня)
+                    Сегодня {dayjs().format('DD.MM.YYYY')} (
+                    {((dayjs().diff('01-01-2025', 'days') / 365) * 100).toFixed(2)}% от года или{' '}
+                    {dayjs().diff('01-01-2025', 'days')} дней/-я)
                 </AlertTitle>
                 <AlertDescription>Больше бери - больше сделаешь</AlertDescription>
             </Alert>
