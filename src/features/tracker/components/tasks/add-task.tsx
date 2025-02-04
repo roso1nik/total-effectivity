@@ -67,13 +67,17 @@ export const AddTask: FC<AddTaskProps> = ({ setTasks }) => {
                 {isErrorMessage && <p className="text-red-700">Введите название задачи</p>}
             </div>
             <div className="flex flex-row gap-2">
-                <Button className="p-10 text-2xl" variant="destructive" onClick={() => addTask('0.8')}>
+                <Button
+                    className="text-md p-5 lg:p-10 lg:text-2xl"
+                    variant="destructive"
+                    onClick={() => addTask('0.8')}
+                >
                     0.8
                 </Button>
-                <Button className="p-10 text-2xl" variant="success" onClick={() => addTask('1.2')}>
+                <Button className="text-md p-5 lg:p-10 lg:text-2xl" variant="success" onClick={() => addTask('1.2')}>
                     1.2
                 </Button>
-                <Button className="p-10 text-2xl" variant="outline" onClick={() => addTask('1.0')}>
+                <Button className="text-md p-5 lg:p-10 lg:text-2xl" variant="outline" onClick={() => addTask('1.0')}>
                     1.0
                 </Button>
             </div>
