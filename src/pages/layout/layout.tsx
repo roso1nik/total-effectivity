@@ -1,5 +1,15 @@
-import Layout from '@/features/layout/layout'
+import { Header } from '@/components/header/header'
+import { Outlet } from 'react-router-dom'
 
-export const LayoutPage = () => {
-    return <Layout />
+const LayoutPage = () => {
+    return (
+        <div>
+            <Header />
+            <main className="mx-auto w-full p-4 lg:w-3/5">
+                <Outlet />
+            </main>
+        </div>
+    )
 }
+
+export default LayoutPage
