@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+    font-family: var(--font-family);
+}
+
+:root {
+    --font-family: "Inter", serif
+}
